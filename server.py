@@ -1,5 +1,5 @@
 from http.server import HTTPServer, SimpleHTTPRequestHandler
-import json, urllib.request, urllib.parse, secrets, webbrowser
+import json, urllib.request, urllib.parse, secrets
 from config import *
 
 sessions = {}
@@ -26,18 +26,18 @@ class Handler(SimpleHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(b'<a href="/auth">Login with Discord</a>')
         elif self.path == '/auth':
-            url = f'https://discord.com/api/oauth2/authorize?client_id={DISCORD_CLIENT_ID}&redirect_uri=http://localhost:8080/callback&response_type=code&scope=identify'
+            url = f'https://discord.com/api/oauth2/authorize?client_id={DISCORD_CLIENT_ID}&redirect_uri={DISCORD_REDIRECT_URI}&response_type=code&scope=identify'
             self.send_response(302)
             self.send_header('Location', url)
             self.end_headers()
-        elif self.path.startswith('/callback'):
+        elif self.path.startswith('/auth/callback'):
             code = self.path.split('code=')[1].split('&')[0]
             data = urllib.parse.urlencode({
                 'client_id': DISCORD_CLIENT_ID,
                 'client_secret': DISCORD_CLIENT_SECRET,
                 'grant_type': 'authorization_code',
                 'code': code,
-                'redirect_uri': 'http://localhost:8080/callback'
+                'redirect_uri': DISCORD_REDIRECT_URI
             }).encode()
             req = urllib.request.Request('https://discord.com/api/oauth2/token', data=data, method='POST')
             with urllib.request.urlopen(req) as r:
@@ -69,7 +69,7 @@ class Handler(SimpleHTTPRequestHandler):
 print("\n=====================================")
 print("   🔥 NEXELMC READY 🔥")
 print("=====================================")
-print("👉 http://localhost:8080")
-print("👉 Admin: http://localhost:8080/admin")
+print("👉 https://nexelmc-website-production.up.railway.app")
+print("👉 Admin: https://nexelmc-website-production.up.railway.app/admin")
 print("=====================================\n")
 HTTPServer(('', 8080), Handler).serve_forever()
