@@ -85,7 +85,6 @@ TEMPLATES = {
                 });
             }
 
-            // Close menu when link is clicked
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.addEventListener('click', function() {
                     navLinks.classList.remove('active');
@@ -101,7 +100,7 @@ TEMPLATES = {
 {% block content %}
 <section class="hero">
     <div class="hero-content">
-        <div class="hero-badge">🔥 COMING SOON</div>
+        <div class="hero-badge">🔥 NOW IN BETA</div>
         <h1 class="hero-title">Next Generation<br>Minecraft Multiplayer</h1>
         <p class="hero-subtitle">Zero pay-to-win. Active staff. Browser support. Join the revolution.</p>
         <div class="hero-buttons">
@@ -297,61 +296,13 @@ TEMPLATES = {
 
 <section class="rules-content">
     <div class="rules-list">
-        <div class="rule-card">
-            <div class="rule-number">1</div>
-            <h3>Be Respectful</h3>
-            <p>Treat all players and staff with respect. No harassment, bullying, or discrimination of any kind.</p>
-        </div>
-
-        <div class="rule-card">
-            <div class="rule-number">2</div>
-            <h3>No Hacking or Cheating</h3>
-            <p>Using hacks, mods, or exploits is strictly prohibited. Violators will be permanently banned.</p>
-        </div>
-
-        <div class="rule-card">
-            <div class="rule-number">3</div>
-            <h3>No Spam or Flooding</h3>
-            <p>Don't spam chat with repeated messages, excessive caps, or flooding.</p>
-        </div>
-
-        <div class="rule-card">
-            <div class="rule-number">4</div>
-            <h3>No Advertising</h3>
-            <p>Don't advertise other servers, Discord servers, or external links without permission.</p>
-        </div>
-
-        <div class="rule-card">
-            <div class="rule-number">5</div>
-            <h3>Respect Staff Decisions</h3>
-            <p>Staff decisions are final. If you disagree, appeal through our Discord.</p>
-        </div>
-
-        <div class="rule-card">
-            <div class="rule-number">6</div>
-            <h3>Have Fun!</h3>
-            <p>This is a game. Enjoy yourself, make friends, and be part of our community.</p>
-        </div>
-
-        <div class="rule-card">
-            <div class="rule-number">7</div>
-            <h3>No Griefing or Stealing</h3>
-            <p>Respect other players' builds and belongings. Griefing and stealing will result in punishment.</p>
-        </div>
-
-        <div class="rule-card">
-            <div class="rule-number">8</div>
-            <h3>No Inappropriate Content</h3>
-            <p>Keep chat family-friendly. No NSFW content, hate speech, or offensive language.</p>
-        </div>
-
-        <div class="rule-card">
-            <div class="rule-number">9</div>
-            <h3>Report Issues</h3>
-            <p>If you see rule violations or bugs, report them to staff immediately.</p>
-        </div>
+        <div class="rule-card"><div class="rule-number">1</div><h3>Be Respectful</h3><p>Treat all players and staff with respect. No harassment, bullying, or discrimination.</p></div>
+        <div class="rule-card"><div class="rule-number">2</div><h3>No Hacking or Cheating</h3><p>Using hacks, mods, or exploits is strictly prohibited. Violators will be permanently banned.</p></div>
+        <div class="rule-card"><div class="rule-number">3</div><h3>No Spam or Flooding</h3><p>Don't spam chat with repeated messages, excessive caps, or flooding.</p></div>
+        <div class="rule-card"><div class="rule-number">4</div><h3>No Advertising</h3><p>Don't advertise other servers, Discord servers, or external links without permission.</p></div>
+        <div class="rule-card"><div class="rule-number">5</div><h3>Respect Staff Decisions</h3><p>Staff decisions are final. If you disagree, appeal through our Discord.</p></div>
+        <div class="rule-card"><div class="rule-number">6</div><h3>Have Fun!</h3><p>This is a game. Enjoy yourself, make friends, and be part of our community.</p></div>
     </div>
-
     <div class="rules-footer">
         <h3>Punishment Policy</h3>
         <p><strong>First Offense:</strong> Warning</p>
@@ -373,95 +324,15 @@ TEMPLATES = {
 
 <section class="staff-content">
     <div class="staff-roles">
-        <div class="staff-role">
-            <h3>👑 Owner</h3>
-            <div class="staff-members">
-                <div class="staff-member">
-                    <div class="staff-avatar">👑</div>
-                    <p class="staff-name">wasiq_rahman_yt</p>
-                    <p class="staff-title">Founder & Lead</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="staff-role">
-            <h3>🔱 Co-Owner</h3>
-            <div class="staff-members">
-                <div class="staff-member">
-                    <div class="staff-avatar">🔱</div>
-                    <p class="staff-name">Coming Soon</p>
-                    <p class="staff-title">Co-Owner</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="staff-role">
-            <h3>⚙️ Admins</h3>
-            <div class="staff-members">
-                <div class="staff-member">
-                    <div class="staff-avatar">⚙️</div>
-                    <p class="staff-name">Coming Soon</p>
-                    <p class="staff-title">Administrator</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="staff-role">
-            <h3>📋 Managers</h3>
-            <div class="staff-members">
-                <div class="staff-member">
-                    <div class="staff-avatar">📋</div>
-                    <p class="staff-name">Coming Soon</p>
-                    <p class="staff-title">Manager</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="staff-role">
-            <h3>💻 Developers</h3>
-            <div class="staff-members">
-                <div class="staff-member">
-                    <div class="staff-avatar">💻</div>
-                    <p class="staff-name">Coming Soon</p>
-                    <p class="staff-title">Lead Developer</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="staff-role">
-            <h3>🛡️ Moderators</h3>
-            <div class="staff-members">
-                <div class="staff-member">
-                    <div class="staff-avatar">🛡️</div>
-                    <p class="staff-name">Coming Soon</p>
-                    <p class="staff-title">Moderator</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="staff-role">
-            <h3>🤝 Helpers</h3>
-            <div class="staff-members">
-                <div class="staff-member">
-                    <div class="staff-avatar">🤝</div>
-                    <p class="staff-name">Coming Soon</p>
-                    <p class="staff-title">Helper</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="staff-role">
-            <h3>🏗️ Builders</h3>
-            <div class="staff-members">
-                <div class="staff-member">
-                    <div class="staff-avatar">🏗️</div>
-                    <p class="staff-name">Coming Soon</p>
-                    <p class="staff-title">Builder</p>
-                </div>
-            </div>
-        </div>
+        <div class="staff-role"><h3>👑 Owner</h3><div class="staff-members"><div class="staff-member"><div class="staff-avatar">👑</div><p class="staff-name">wasiq_rahman_yt</p><p class="staff-title">Founder & Lead</p></div></div></div>
+        <div class="staff-role"><h3>🔱 Co-Owner</h3><div class="staff-members"><div class="staff-member"><div class="staff-avatar">🔱</div><p class="staff-name">Coming Soon</p><p class="staff-title">Co-Owner</p></div></div></div>
+        <div class="staff-role"><h3>⚙️ Admins</h3><div class="staff-members"><div class="staff-member"><div class="staff-avatar">⚙️</div><p class="staff-name">Coming Soon</p><p class="staff-title">Administrator</p></div></div></div>
+        <div class="staff-role"><h3>📋 Managers</h3><div class="staff-members"><div class="staff-member"><div class="staff-avatar">📋</div><p class="staff-name">Coming Soon</p><p class="staff-title">Manager</p></div></div></div>
+        <div class="staff-role"><h3>💻 Developers</h3><div class="staff-members"><div class="staff-member"><div class="staff-avatar">💻</div><p class="staff-name">Coming Soon</p><p class="staff-title">Developer</p></div></div></div>
+        <div class="staff-role"><h3>🛡️ Moderators</h3><div class="staff-members"><div class="staff-member"><div class="staff-avatar">🛡️</div><p class="staff-name">Coming Soon</p><p class="staff-title">Moderator</p></div></div></div>
+        <div class="staff-role"><h3>🤝 Helpers</h3><div class="staff-members"><div class="staff-member"><div class="staff-avatar">🤝</div><p class="staff-name">Coming Soon</p><p class="staff-title">Helper</p></div></div></div>
+        <div class="staff-role"><h3>🏗️ Builders</h3><div class="staff-members"><div class="staff-member"><div class="staff-avatar">🏗️</div><p class="staff-name">Coming Soon</p><p class="staff-title">Builder</p></div></div></div>
     </div>
-
     <div class="staff-footer">
         <h3>Interested in Joining Staff?</h3>
         <p>We're always looking for dedicated community members to join our team!</p>
@@ -480,64 +351,14 @@ TEMPLATES = {
 </section>
 
 <section class="apply-content">
-    <div class="apply-intro">
-        <h2>We're Hiring!</h2>
-        <p>NexelMC is looking for passionate community members to join our staff team.</p>
-    </div>
-
+    <div class="apply-intro"><h2>We're Hiring!</h2><p>NexelMC is looking for passionate community members to join our staff team.</p></div>
     <div class="apply-positions">
-        <div class="position-card">
-            <div class="position-icon">🏗️</div>
-            <h3>Builder</h3>
-            <p>Help us create amazing worlds and structures.</p>
-            <ul>
-                <li>Design and build server worlds</li>
-                <li>Create custom structures</li>
-                <li>Maintain server aesthetics</li>
-            </ul>
-            <a href="https://forms.gle/builder-form" class="btn-primary" target="_blank">Apply as Builder</a>
-        </div>
-
-        <div class="position-card">
-            <div class="position-icon">🤝</div>
-            <h3>Helper</h3>
-            <p>Assist players and help maintain a positive community.</p>
-            <ul>
-                <li>Help new players</li>
-                <li>Answer questions</li>
-                <li>Report issues to staff</li>
-            </ul>
-            <a href="https://forms.gle/helper-form" class="btn-primary" target="_blank">Apply as Helper</a>
-        </div>
-
-        <div class="position-card">
-            <div class="position-icon">💻</div>
-            <h3>Developer</h3>
-            <p>Build the future of NexelMC.</p>
-            <ul>
-                <li>Develop server plugins</li>
-                <li>Fix bugs and optimize code</li>
-                <li>Implement new features</li>
-            </ul>
-            <a href="https://forms.gle/developer-form" class="btn-primary" target="_blank">Apply as Developer</a>
-        </div>
+        <div class="position-card"><div class="position-icon">🏗️</div><h3>Builder</h3><p>Help us create amazing worlds and structures.</p><ul><li>Design and build server worlds</li><li>Create custom structures</li><li>Maintain server aesthetics</li></ul><a href="#" class="btn-primary" target="_blank">Apply as Builder</a></div>
+        <div class="position-card"><div class="position-icon">🤝</div><h3>Helper</h3><p>Assist players and help maintain a positive community.</p><ul><li>Help new players</li><li>Answer questions</li><li>Report issues to staff</li></ul><a href="#" class="btn-primary" target="_blank">Apply as Helper</a></div>
+        <div class="position-card"><div class="position-icon">💻</div><h3>Developer</h3><p>Build the future of NexelMC.</p><ul><li>Develop server plugins</li><li>Fix bugs and optimize code</li><li>Implement new features</li></ul><a href="#" class="btn-primary" target="_blank">Apply as Developer</a></div>
     </div>
-
-    <div class="apply-requirements">
-        <h2>General Requirements</h2>
-        <ul>
-            <li>Must be 13+ years old</li>
-            <li>Active Discord member</li>
-            <li>Respectful and mature behavior</li>
-            <li>Commitment to the community</li>
-        </ul>
-    </div>
-
-    <div class="apply-footer">
-        <h3>Questions?</h3>
-        <p>Join our Discord and ask staff members directly!</p>
-        <a href="https://discord.gg/xgbzTgUZuD" class="btn-secondary" target="_blank">💬 Join Discord</a>
-    </div>
+    <div class="apply-requirements"><h2>General Requirements</h2><ul><li>Must be 13+ years old</li><li>Active Discord member</li><li>Respectful and mature behavior</li><li>Commitment to the community</li></ul></div>
+    <div class="apply-footer"><h3>Questions?</h3><p>Join our Discord and ask staff members directly!</p><a href="https://discord.gg/xgbzTgUZuD" class="btn-secondary" target="_blank">💬 Join Discord</a></div>
 </section>
 {% endblock %}''',
 
@@ -551,48 +372,14 @@ TEMPLATES = {
 </section>
 
 <section class="vote-content">
-    <div class="vote-intro">
-        <h2>Support NexelMC</h2>
-        <p>Voting helps us grow and reach more players. Every vote counts!</p>
-    </div>
-
+    <div class="vote-intro"><h2>Support NexelMC</h2><p>Voting helps us grow and reach more players. Every vote counts!</p></div>
     <div class="vote-sites">
-        <div class="vote-card">
-            <div class="vote-icon">🎮</div>
-            <h3>Minecraft Server List</h3>
-            <p>Vote on the official Minecraft server list</p>
-            <a href="#" class="btn-primary" target="_blank">Vote Here</a>
-        </div>
-
-        <div class="vote-card">
-            <div class="vote-icon">⭐</div>
-            <h3>Server.pro</h3>
-            <p>Rate and vote for NexelMC on Server.pro</p>
-            <a href="#" class="btn-primary" target="_blank">Vote Here</a>
-        </div>
-
-        <div class="vote-card">
-            <div class="vote-icon">🏆</div>
-            <h3>TopG</h3>
-            <p>Support us on TopG server list</p>
-            <a href="#" class="btn-primary" target="_blank">Vote Here</a>
-        </div>
+        <div class="vote-card"><div class="vote-icon">🎮</div><h3>Minecraft Server List</h3><p>Vote on the official Minecraft server list</p><a href="#" class="btn-primary" target="_blank">Vote Here</a></div>
+        <div class="vote-card"><div class="vote-icon">⭐</div><h3>Server.pro</h3><p>Rate and vote for NexelMC on Server.pro</p><a href="#" class="btn-primary" target="_blank">Vote Here</a></div>
+        <div class="vote-card"><div class="vote-icon">🏆</div><h3>TopG</h3><p>Support us on TopG server list</p><a href="#" class="btn-primary" target="_blank">Vote Here</a></div>
     </div>
-
-    <div class="vote-rewards">
-        <h2>Vote Rewards</h2>
-        <ul>
-            <li>💰 In-game currency</li>
-            <li>🎁 Exclusive cosmetics</li>
-            <li>⭐ Voting streaks</li>
-            <li>🏅 Special badges</li>
-        </ul>
-    </div>
-
-    <div class="vote-footer">
-        <h3>Thank You!</h3>
-        <p>Your support means everything to us. Thank you for voting!</p>
-    </div>
+    <div class="vote-rewards"><h2>Vote Rewards</h2><ul><li>💰 In-game currency</li><li>🎁 Exclusive cosmetics</li><li>⭐ Voting streaks</li><li>🏅 Special badges</li></ul></div>
+    <div class="vote-footer"><h3>Thank You!</h3><p>Your support means everything to us. Thank you for voting!</p></div>
 </section>
 {% endblock %}'''
 }
